@@ -1,0 +1,145 @@
+.buttonLight1 {
+  position: relative;
+  border: none;
+  color: black;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #fff;
+  transition-duration: 0.4s;
+  font-family: inherit;
+  cursor: pointer;
+}
+.buttonLight1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.buttonLight1:hover::after {
+  width: 0;
+  height: 100%;
+}
+.buttonLight1:hover {
+  color: white;
+}
+.buttonLight1:active {
+  transform: scale(0.8);
+}
+/* 2 */
+.buttonLight2 {
+  position: relative;
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #fff;
+  transition-duration: 0.4s;
+  font-family: inherit;
+  cursor: pointer;
+}
+.buttonLight2::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.buttonLight2:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.buttonLight2:hover {
+  color: black;
+}
+.buttonLight2:active {
+  transform: scale(0.8);
+}
+
+/* 3 */
+.buttonDark1 {
+  position: relative;
+  border: none;
+  color: black;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #000;
+  transition-duration: 0.4s;
+  font-family: inherit;
+  cursor: pointer;
+}
+.buttonDark1::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.buttonDark1:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.buttonDark1:hover {
+  color: white;
+}
+.buttonDark1:active {
+  transform: scale(0.8);
+}
+
+/* 4 */
+.buttonDark2 {
+  position: relative;
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #000;
+  transition-duration: 0.4s;
+  font-family: inherit;
+  cursor: pointer;
+}
+.buttonDark2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.buttonDark2:hover::after {
+  width: 0%;
+  height: 100%;
+}
+.buttonDark2:hover {
+  color: #000;
+}
+.buttonDark2:active {
+  transform: scale(0.8);
+}
