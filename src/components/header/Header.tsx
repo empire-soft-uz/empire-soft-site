@@ -1,7 +1,50 @@
-import "./header.css";
+import Image from "next/image";
+import styles from "./header.module.css";
 
 const Header = () => {
-  return <header>{/*  */}</header>;
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <div>
+          <span>
+            <Image
+              alt="logo"
+              src="/assets/logo.svg"
+              width={"100"}
+              height={"48"}
+            />
+          </span>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Development</a>
+            </li>
+          </ul>
+        </nav>
+        <div className={styles.btns}>
+          <button className={styles.lang}>
+            <span>
+              <Image
+                alt="lang"
+                src={"/assets/lang.svg"}
+                width={"20"}
+                height={"20"}
+              />
+            </span>
+            English
+          </button>
+          <button>Start development</button>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
