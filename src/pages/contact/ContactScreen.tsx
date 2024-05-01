@@ -3,156 +3,89 @@ import styles from "./contact.module.css";
 
 const ContactScreen = () => {
   return (
-    <div className={styles.fullscreen}>
-      <Image
-        alt="logo"
-        src="/assets/1 401.svg"
-        fill
-        sizes="(min-width: 808px) 50vw, 100vw"
-        style={{
-          objectFit: "cover",
-          position: "absolute",
-        }}
-      />
-      <main className={styles.content}>
-        <div className={styles.top}>
-          <div className={styles.topLeft}>
-            <div className={styles.topText}>
-              <Image alt="code" src="/assets/code.svg" width={20} height={20} />
-              <span>Portfolio</span>
-            </div>
-            <Image
-              src="/assets/Netflix_2015_logo 1.svg"
-              alt="logo"
-              width={220}
-              height={60}
-            />
+    <div>
+      <div className={styles.container}>
+        <div className={styles.contact}>
+          <div className={styles.IconContact}>
+            <Image src="/assets/img/Group.svg" alt="" width={30} height={30} />
+            <h5>Contact</h5>
           </div>
-          <div className={styles.tools}>
-            <Image
-              alt="logo"
-              src="/assets/react-original.svg"
-              width={25}
-              height={25}
-            />
-            <Image
-              alt="logo"
-              src="/assets/javascript-original.svg"
-              width={25}
-              height={25}
-            />
-            <Image
-              alt="logo"
-              src="/assets/flutter-original.svg"
-              width={25}
-              height={25}
-            />
-            <Image
-              alt="logo"
-              src="/assets/CSS3_logo.svg"
-              width={25}
-              height={25}
-            />
+          <h1>Give Us a Request</h1>
+          <p>or contact us now</p>
+          <div className={styles.phonNumber}>
+            <a href="#">
+              <h3>+998 99 448 05 00</h3>
+            </a>
+            <a href="#">
+              <p>empire.soft.net@gmail.com</p>
+            </a>
+          </div>
+          <div className={styles.iconTarmoq}>
+            <a href="#">
+              <Image
+                src="/assets/img/Telegram.svg"
+                alt=""
+                width={100}
+                height={100}
+              />
+            </a>
+            <a href="#">
+              <Image
+                src="/assets/img/whatsapp (1) 1.svg"
+                alt=""
+                width={100}
+                height={100}
+              />
+            </a>
           </div>
         </div>
-        <div className={styles.center}>
-          <div>
-            <div className={styles.centerTexts}>
-              <h1>Introducing</h1>
-              <p>
-                New mobile app for fitness tracking and subscription prestige
-                Sport Club Chekhov
-              </p>
+        <div className={styles.inputGroup}>
+          <div className={styles.formGroup1}>
+            <p className={styles.first}>Name</p>
+            <input
+              type="text"
+              placeholder="Your name or company name"
+              className={styles.formControl}
+              id="usr"
+            />
+          </div>
+          <div className={styles.emailContainer}>
+            <div className={styles.formGroup}>
+              <p className={styles.first}>email</p>
+              <input
+                type="email"
+                placeholder="example@mail.com"
+                className={styles.formControl}
+                id="usr"
+              />
             </div>
-            <div className={styles.centerBtns}>
-              <button>View app</button>
+            <div className={styles.Phon}>
+              <p className={styles.first}>Phone</p>
               <div>
-                <Image
-                  src="/assets/apple.svg"
-                  alt="dev"
-                  width={25}
-                  height={25}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/assets/Vector.svg"
-                  alt="dev"
-                  width={25}
-                  height={25}
-                />
-              </div>
-              <div>
-                <Image
-                  src="/assets/image 9 (Traced).svg"
-                  alt="dev"
-                  width={25}
-                  height={25}
-                />
+                <span className={styles.flag}>
+                  <Image
+                    src="/assets/img/UZ.svg"
+                    alt=""
+                    width={100}
+                    height={100}
+                  />
+                </span>
+                <span>
+                  <input
+                    type="text"
+                    placeholder={"+998"}
+                    className={styles.formControl1}
+                    id="usr"
+                  />
+                </span>
               </div>
             </div>
           </div>
-          <div className={styles.centerRight}>
-            <h1>Developed by</h1>
-            <div className={styles.devs}>
-              <Image src="/assets/dev.png" alt="dev" width={40} height={40} />
-              <Image src="/assets/dev.png" alt="dev" width={40} height={40} />
-              <Image src="/assets/dev.png" alt="dev" width={40} height={40} />
-              <Image src="/assets/dev.png" alt="dev" width={40} height={40} />
-            </div>
+          <div className={styles.send}>
+            <button>Send a request</button>
           </div>
         </div>
-        <div className={styles.bottom}>
-          <div>
-            <Image
-              src="/assets/Group 3.svg"
-              alt="logo"
-              width={130}
-              height={40}
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/Group 3.svg"
-              alt="logo"
-              width={130}
-              height={40}
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/Group 3.svg"
-              alt="logo"
-              width={130}
-              height={40}
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/Group 3.svg"
-              alt="logo"
-              width={130}
-              height={40}
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/Group 3.svg"
-              alt="logo"
-              width={130}
-              height={40}
-            />
-          </div>
-          <div>
-            <Image
-              src="/assets/Group 3.svg"
-              alt="logo"
-              width={130}
-              height={40}
-            />
-          </div>
-        </div>
-      </main>
+      </div>
     </div>
   );
 };

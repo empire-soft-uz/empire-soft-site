@@ -65,6 +65,7 @@
   position: relative;
   display: flex;
   margin-top: 80px;
+  gap: 30px;
 }
 .footerText {
   position: relative;
