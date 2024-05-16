@@ -1,16 +1,3 @@
-export const data = [
-  {
-    id: 0,
-    name: "Netflix",
-    image: "/assets/1 401.svg",
-  },
-  {
-    id: 1,
-    name: "Netflix 1",
-    image: "/assets/1 401.svg",
-  },
-];
-
 export const projects = [
   {
     name: "FIT.ME",
@@ -20,6 +7,10 @@ export const projects = [
     description:
       "Mobile app and website for finding trainers, nutritions and proper set of exercises",
     screenshot: "fitme-app.png",
+    videoUrl: "",
+    iosLink: "",
+    androidLink: "",
+    websiteLink: "https://weebuild.uz/",
   },
   {
     name: "Pactive",

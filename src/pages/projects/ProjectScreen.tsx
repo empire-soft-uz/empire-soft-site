@@ -1,13 +1,12 @@
+"use client";
 import Image from "next/image";
 import styles from "./project.module.css";
 import { useEffect, useState } from "react";
-import { data, projects } from "./data";
-import { useAsynchronousCounter } from "./hook";
+import { projects } from "../../../public/data";
 
 const ProjectScreen = () => {
   const [mockData, setMockData] = useState(projects);
   const [index, setIndex] = useState(0);
-  const [value, setValue] = useState(0); // Counter value state
 
   useEffect(() => {
     const timer = setInterval(() => {
