@@ -10,7 +10,7 @@ const HomeScreen = () => {
   return (
     <div className={styles.fullscreen}>
       <main className={styles.content}>
-        <div className={styles.selectBtns}>
+        <div data-aos="fade-up" className={styles.selectBtns}>
           <div
             className={styles.after}
             style={isCode ? { left: "138px", width: "140px" } : {}}

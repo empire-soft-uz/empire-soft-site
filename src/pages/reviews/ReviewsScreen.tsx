@@ -10,10 +10,14 @@ const ReviewsScreen = () => {
             <Image src="/assets/code.svg" alt="logo" width={20} height={20} />
             <p>Reviews</p>
           </div>
-          <div className={styles.topCenterText}>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="0"
+            className={styles.topCenterText}
+          >
             <h1>Those Who Entrusted Their Business To Us</h1>
           </div>
-          <div className={styles.bottom}>
+          <div data-aos="fade-up" data-aos-delay="0" className={styles.bottom}>
             <div className={styles.topItem}>
               <div>
                 <Image
@@ -78,7 +82,7 @@ const ReviewsScreen = () => {
             </div>
           </div>
         </div>
-        <div className={styles.right}>
+        <div data-aos="fade-left" data-aos-delay="0" className={styles.right}>
           <div className={styles.content_item}>
             <span>
               <Image

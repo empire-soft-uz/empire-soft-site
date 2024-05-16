@@ -95,4 +95,5 @@
   gap: 15px;
   display: flex;
   flex-direction: column;
+  min-height: 270px;
 }

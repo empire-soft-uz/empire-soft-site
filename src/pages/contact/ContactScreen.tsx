@@ -5,7 +5,7 @@ const ContactScreen = () => {
   return (
     <div>
       <div className={styles.container}>
-        <div className={styles.contact}>
+        <div data-aos="fade-up" data-aos-delay="0" className={styles.contact}>
           <div className={styles.IconContact}>
             <Image src="/assets/img/Group.svg" alt="" width={30} height={30} />
             <h5>Contact</h5>
@@ -39,7 +39,11 @@ const ContactScreen = () => {
             </a>
           </div>
         </div>
-        <div className={styles.inputGroup}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className={styles.inputGroup}
+        >
           <div className={styles.formGroup1}>
             <p className={styles.first}>Name</p>
             <input

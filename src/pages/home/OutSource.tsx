@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./home.module.css";
 import React from "react";
+import { data } from "./components/developers";
 
 const OutSource = () => {
   return (
     <>
-      <div className={styles.texts}>
+      <div data-aos="fade-up" data-aos-delay="50" className={styles.texts}>
         <h2>Trusted Team is</h2>
         <h1>The Key To Success</h1>
       </div>
@@ -15,39 +16,55 @@ const OutSource = () => {
           width={"55"}
           height={"55"}
           alt="react"
+          data-aos="fade-up"
+          data-aos-delay="200"
         />
         <Image
           src={"/assets/tools/javascript-original.svg"}
           width={"55"}
           height={"55"}
           alt="react"
+          data-aos="fade-up"
+          data-aos-delay="300"
         />
         <Image
           src={"/assets/tools/flutter-original.svg"}
           width={"55"}
           height={"55"}
           alt="react"
+          data-aos="fade-up"
+          data-aos-delay="400"
         />
         <Image
           src={"/assets/tools/CSS3_logo.svg"}
           width={"55"}
           height={"55"}
           alt="react"
+          data-aos="fade-up"
+          data-aos-delay="500"
         />
         <Image
           src={"/assets/tools/golang-original.svg"}
           width={"110"}
           height={"55"}
           alt="react"
+          data-aos="fade-up"
+          data-aos-delay="600"
         />
         <Image
           src={"/assets/tools/node-original 1.svg"}
           width={"55"}
           height={"55"}
           alt="react"
+          data-aos="fade-up"
+          data-aos-delay="700"
         />
       </div>
-      <div className={styles.footerText}>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className={styles.footerText}
+      >
         <p>
           In general, of course, the constant information and propaganda support
           of our activities does not give us any choice but to determine the
@@ -55,18 +72,27 @@ const OutSource = () => {
           findings from online analytics can be made public.
         </p>
       </div>
-      <div className={styles.footerContent}>
+      <div
+        data-aos="fade-up"
+        data-aos-delay="150"
+        className={styles.footerContent}
+      >
         <div className={styles.left}>
           <div className={styles.images}>
-            <div className={styles.userImg}>
-              <Image
-                src="/assets/dev.png"
-                alt="logo"
-                width={100}
-                height={100}
-              />
-            </div>
-            <div className={styles.userImg}>
+            {data.slice(3, 7).map((item, index) => {
+              return (
+                <div key={index} className={styles.userImg}>
+                  <Image
+                    src={item.image ?? ""}
+                    alt="logo"
+                    width={200}
+                    height={200}
+                  />
+                </div>
+              );
+            })}
+
+            {/* <div className={styles.userImg}>
               <Image src="/assets/dev.png" alt="lo" width={100} height={100} />
             </div>
             <div className={styles.userImg}>
@@ -74,7 +100,7 @@ const OutSource = () => {
             </div>
             <div className={styles.userImg}>
               <Image src="/assets/dev.png" alt="lo" width={100} height={100} />
-            </div>
+            </div> */}
           </div>
           <div className={styles.title}>
             <h1>Outstaffing</h1>

@@ -23,6 +23,7 @@
   background: #141414;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .IconContact {
   display: flex;

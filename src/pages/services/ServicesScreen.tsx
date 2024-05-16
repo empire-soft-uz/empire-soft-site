@@ -3,9 +3,13 @@ import styles from "./services.module.css";
 
 const ServicesScreen = () => {
   return (
-    <div className={styles.container}>
+    <div id="services" className={styles.container}>
       <div className={styles.container__item__top}>
-        <div className={styles.item__top__icons}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className={styles.item__top__icons}
+        >
           <span>
             <Image
               src={"/assets/imgs/programming-code.10.svg"}
@@ -16,17 +20,25 @@ const ServicesScreen = () => {
           </span>
           <span className={styles.top__icons__text}>Services</span>
         </div>
-        <h2>
+        <h2 data-aos="fade-up" data-aos-delay="0">
           We Provide <br /> Such Services
         </h2>
-        <div className={styles.container__item}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className={styles.container__item}
+        >
           <h3>Mobile app development</h3>
           <p>
             We can create a customized e-commerce solution that fits your
             business needs and helps you increase your online sales.
           </p>
         </div>
-        <div className={styles.item__bottom__icons}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className={styles.item__bottom__icons}
+        >
           <span>
             <Image
               src={"/assets/imgs/react-original.svg"}
@@ -46,11 +58,19 @@ const ServicesScreen = () => {
         </div>
       </div>
       <div className={styles.container__item__center}>
-        <div className={styles.center__item}>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="0"
+          className={styles.center__item}
+        >
           <h3>WEB Dev</h3>
           <a href="">Web Development</a>
         </div>
-        <div className={styles.center__item}>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          className={styles.center__item}
+        >
           <div>
             <h3>Support</h3>
             <a href="">Website Maintenance</a>
@@ -66,7 +86,11 @@ const ServicesScreen = () => {
             height={30}
           />
         </div>
-        <div className={styles.center__item}>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="0"
+          className={styles.center__item}
+        >
           <h3>UX / UI Design</h3>
           <p>
             We focus on creating intuitive and visually appealing user
@@ -76,7 +100,11 @@ const ServicesScreen = () => {
         </div>
       </div>
       <div className={styles.container__items}>
-        <div className={styles.container__item}>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="0"
+          className={styles.container__item}
+        >
           <div>
             <h3>Custom Software Development</h3>
             <p>
@@ -91,7 +119,11 @@ const ServicesScreen = () => {
             height={30}
           />
         </div>
-        <div className={styles.container__item}>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="0"
+          className={styles.container__item}
+        >
           <div>
             <h3>Search Engine Marketing</h3>
             <p>
