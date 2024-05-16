@@ -91,16 +91,6 @@ const OutSource = () => {
                 </div>
               );
             })}
-
-            {/* <div className={styles.userImg}>
-              <Image src="/assets/dev.png" alt="lo" width={100} height={100} />
-            </div>
-            <div className={styles.userImg}>
-              <Image src="/assets/dev.png" alt="lo" width={100} height={100} />
-            </div>
-            <div className={styles.userImg}>
-              <Image src="/assets/dev.png" alt="lo" width={100} height={100} />
-            </div> */}
           </div>
           <div className={styles.title}>
             <h1>Outstaffing</h1>

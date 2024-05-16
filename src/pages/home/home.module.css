@@ -19,7 +19,7 @@
   background-color: rgba(0, 0, 0, 0.08);
   overflow: hidden;
   align-items: center;
-  height: 50px !important;
+  height: 50px;
 }
 .after {
   position: absolute;
@@ -40,7 +40,7 @@
   z-index: 2;
   gap: 10px;
   cursor: pointer;
-  height: 50px !important;
+  height: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -51,7 +51,7 @@
   align-items: center;
   top: 50px;
   width: 1300px;
-  height: 85%;
+  /* height: 85%; */
   margin: auto;
   justify-content: flex-start;
 }
@@ -213,11 +213,88 @@
   .content {
     width: 540px;
   }
+  .texts {
+    margin-top: 50px;
+  }
+  .texts h2 {
+    font-size: 25px;
+  }
+  .texts h1 {
+    font-size: 40px;
+  }
+  .tools {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .tools img {
+    width: 30px;
+    height: 30px;
+  }
+  .footerText {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .footerText p {
+    font-size: 13px;
+  }
+  .footerContent {
+    padding: 22px;
+    margin-top: 30px;
+  }
+  .footerContent .images {
+    display: none;
+  }
+  .footerContent .title {
+    display: none;
+  }
+  /* .footerContent {
+    padding: 22px;
+    margin-top: 30px;
+    font-size: 13px;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footerContent .describe p {
+    font-size: 13px;
+  } */
 }
 
 @media (min-width: 768px) {
   .content {
     width: 720px;
+  }
+  .texts {
+    margin-top: 50px;
+  }
+  .texts h2 {
+    font-size: 35px;
+  }
+  .texts h1 {
+    font-size: 60px;
+  }
+  .tools {
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .tools img {
+    width: 40px;
+    height: 40px;
+  }
+  .footerText {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .footerText p {
+    font-size: 16px;
+  }
+  .selectBtns {
+    width: 280px;
+    padding: 10px;
+    height: 50px;
+  }
+  .btn {
+    gap: 10px;
+    height: 50px;
   }
 }
 
@@ -225,11 +302,63 @@
   .content {
     width: 960px;
   }
+  .texts {
+    margin-top: 50px;
+  }
+  .texts h2 {
+    font-size: 45px;
+  }
+  .texts h1 {
+    font-size: 80px;
+  }
+  .tools {
+    margin-top: 40px;
+    gap: 30px;
+  }
+  .tools img {
+    width: 50px;
+    height: 50px;
+  }
+  .footerText {
+    margin-top: 40px;
+    width: 70%;
+  }
+  .footerText p {
+    font-size: 16px;
+  }
+  .selectBtns {
+    width: 280px;
+    padding: 10px;
+    height: 50px;
+  }
+  .btn {
+    gap: 10px;
+    height: 50px;
+  }
+  .footerContent {
+    padding: 32px;
+    margin-top: 40px;
+  }
+  .footerContent .images {
+    display: flex;
+  }
+  .footerContent .title {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
   .content {
     width: 1140px;
+  }
+  .texts {
+    margin-top: 50px;
+  }
+  .texts h2 {
+    font-size: 55px;
+  }
+  .texts h1 {
+    font-size: 100px;
   }
 }
 
@@ -243,5 +372,45 @@
   .content {
     width: 100%;
     padding: 0 15px;
+  }
+  .texts {
+    margin-top: 50px;
+  }
+  .texts h2 {
+    font-size: 25px;
+  }
+  .texts h1 {
+    font-size: 40px;
+  }
+  .tools {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .tools img {
+    width: 30px;
+    height: 30px;
+  }
+  .footerText {
+    margin-top: 20px;
+    width: 90%;
+  }
+  .footerText p {
+    font-size: 13px;
+  }
+  .footerContent {
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 13px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footerContent .describe p {
+    font-size: 13px;
+  }
+  .footerContent .images {
+    display: none;
+  }
+  .footerContent .title {
+    display: none;
   }
 }
