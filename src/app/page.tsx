@@ -22,8 +22,9 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      easing: "ease-out-quad",
-      duration: 1000,
+      easing: "ease-out-cubic",
+      once: false,
+      offset: 50,
     });
   }, []);
 
