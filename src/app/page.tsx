@@ -74,7 +74,7 @@ export default function Home() {
   // );
 
   return (
-    <main>
+    <main style={{ overflow: "hidden" }}>
       <Header />
       <HomeScreen />
       <ProjectScreen />

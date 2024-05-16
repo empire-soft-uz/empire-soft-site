@@ -1,7 +1,7 @@
 .fullscreen {
   color: #000;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   overflow: hidden;
   position: relative;
@@ -96,4 +96,114 @@
   display: flex;
   flex-direction: column;
   min-height: 270px;
+}
+
+@media (min-width: 576px) {
+  .content {
+    width: 540px;
+    padding: 120px 0;
+  }
+  .fullscreen {
+    height: auto;
+  }
+  .content_items {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    column-gap: 100px;
+    padding-bottom: 0px;
+  }
+  .topContent h1 {
+    font-size: 50px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 720px;
+    height: auto;
+  }
+  .content_items {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    column-gap: 100px;
+  }
+  .topContent h1 {
+    font-size: 50px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    width: 960px;
+    height: 100%;
+  }
+  .content_items {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    column-gap: 100px;
+  }
+  .topContent h1 {
+    font-size: 60px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    width: 1140px;
+  }
+  .content_items {
+    margin-top: 180px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .topContent h1 {
+    font-size: 80px;
+    line-height: 100%;
+  }
+  .fullscreen {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .content {
+    width: 1320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    width: 100%;
+    padding: 50px 15px;
+    height: auto;
+  }
+  .content_items {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 100px;
+    padding-bottom: 50px;
+  }
+  .topContent h1 {
+    font-size: 40px;
+    line-height: 100%;
+  }
+  .fullscreen {
+    height: auto;
+  }
 }

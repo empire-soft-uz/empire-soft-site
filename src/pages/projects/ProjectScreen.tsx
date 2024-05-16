@@ -50,32 +50,6 @@ const ProjectScreen = () => {
               height={60}
             />
           </div>
-          {/* <div className={styles.tools}>
-            <Image
-              alt="logo"
-              src="/assets/react-original.svg"
-              width={25}
-              height={25}
-            />
-            <Image
-              alt="logo"
-              src="/assets/javascript-original.svg"
-              width={25}
-              height={25}
-            />
-            <Image
-              alt="logo"
-              src="/assets/flutter-original.svg"
-              width={25}
-              height={25}
-            />
-            <Image
-              alt="logo"
-              src="/assets/CSS3_logo.svg"
-              width={25}
-              height={25}
-            />
-          </div> */}
         </div>
         <div data-aos="fade-up" data-aos-delay="300" className={styles.center}>
           <div>

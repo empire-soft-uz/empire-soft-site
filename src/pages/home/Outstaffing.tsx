@@ -5,7 +5,7 @@ import { data } from "../../../public/developers";
 
 const Outstaffing = () => {
   return (
-    <>
+    <div className={styles.flex}>
       <div data-aos="fade-up" className={styles.main}>
         <h2>We Develop Complex Projects —</h2>
         <h1>Meet Our Team</h1>
@@ -43,7 +43,7 @@ const Outstaffing = () => {
           },
         )}
       </div>
-    </>
+    </div>
   );
 };
 

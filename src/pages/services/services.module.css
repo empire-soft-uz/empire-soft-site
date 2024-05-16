@@ -213,6 +213,7 @@
   }
 
   .container__item__top {
+    position: relative;
     background-color: #1f1f1f;
     background-image: url("/assets/imgs/Mask\ group\ \(1\).png");
     background-size: cover;
@@ -603,10 +604,9 @@
   }
 
   .item__bottom__icons {
-    position: relative;
+    position: absolute;
     display: flex;
     gap: 10px;
-    border: 1px solid white;
   }
 
   .center__item:nth-child(1),
