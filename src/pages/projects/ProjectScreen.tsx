@@ -33,6 +33,25 @@ const ProjectScreen = () => {
           opacity: 0.2,
         }}
       />
+      <div
+        style={{
+          backgroundColor:
+            `url("/assets/ES_NEW/assets/${projects[index].screenshot}")` ??
+            'url("/assets/image 16.svg")',
+        }}
+        className={styles.mock}
+      >
+        <Image
+          alt="logo"
+          src={
+            projects[index].screenshot
+              ? "/assets/ES_NEW/assets/" + projects[index].screenshot
+              : "/assets/1 401.svg"
+          }
+          width={1000}
+          height={1000}
+        />
+      </div>
       <main className={styles.content}>
         <div className={styles.top}>
           <div data-aos="fade-up" data-aos-delay="0" className={styles.topLeft}>

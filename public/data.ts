@@ -6,11 +6,12 @@ export const projects = [
     title: "New generation of fitness",
     description:
       "Mobile app and website for finding trainers, nutritions and proper set of exercises",
-    screenshot: "fitme-app.png",
+    screenshot: "Phone-fitme.png",
     videoUrl: "",
     iosLink: "",
     androidLink: "",
-    websiteLink: "https://weebuild.uz/",
+    websiteLink: "",
+    type: "mobile",
   },
   {
     name: "Pactive",
@@ -19,12 +20,13 @@ export const projects = [
     title: "Get Pactive",
     description:
       "Lifestyle app designed to bring together social groups & improve their overall health and wellbeing, while raising funds for good causes",
-    screenshot: "pactive-app.png",
+    screenshot: "Phone-pact.png",
     videoUrl: "pactive.mp4",
     iosLink: "https://apps.apple.com/uz/app/pactive/id1441960847",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.koicapital.pactive&hl=en_US",
     websiteLink: "",
+    type: "mobile",
   },
   {
     name: "Ezyorganizer",
@@ -32,13 +34,14 @@ export const projects = [
     logo: "ezy.png",
     title: "Todo life planner",
     description: "ORGANIZE YOUR TODOs … NOW WITH VOICE CONTROL",
-    screenshot: "ezy-app.pmg",
+    screenshot: "Phone-ezy.png",
     videoUrl: "",
     iosLink:
       "https://apps.apple.com/uz/app/ezyorganizer-life-organizer/id1469144912",
     androidLink:
       "https://play.google.com/store/apps/details?id=com.aecd9d0bc1e7.app&hl=ru&gl=US",
     websiteLink: "https://ezyorganizer.com/",
+    type: "mobile",
   },
   {
     name: "ETZsoft",
@@ -47,7 +50,7 @@ export const projects = [
     title: "New way of handling retirement",
     description:
       "Employees can trade 24/7 in their retirement account through our simple to use mobile app.",
-    screenshot: "etz-video.mp4",
+    screenshot: "Phone-etz.png",
     videoUrl: "",
     iosLink: "https://apps.apple.com/us/app/etz/id1643138304",
     androidLink:
@@ -62,7 +65,7 @@ export const projects = [
     title: "Home interior calculator",
     description:
       "Know your expenses and products list when renovating your apartment",
-    screenshot: "weebuild-app.png",
+    screenshot: "Macbook.png",
     videoUrl: "",
     iosLink: "",
     androidLink: "",
