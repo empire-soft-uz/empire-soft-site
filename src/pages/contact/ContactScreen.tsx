@@ -195,8 +195,8 @@ const ContactScreen = () => {
                     </div>
                     <div className={styles.send}>
                         <button onClick={sendBot}>
-                            Send a request{" "}
-                            {sendLoading ? <LoadingOutlined /> : null}{" "}
+                            Send a request
+                            {sendLoading ? <LoadingOutlined /> : null}
                         </button>
                     </div>
                 </div>
