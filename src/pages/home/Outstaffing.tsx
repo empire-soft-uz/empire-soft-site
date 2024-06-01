@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./home.module.css";
 import Image from "next/image";
-import { data } from "../../../public/developers";
+// import { data } from "../../../public/developers";
 
 const Outstaffing = () => {
-  return (
-    <div className={styles.flex}>
-      <div data-aos="fade-up" className={styles.main}>
-        <h2>We Develop Complex Projects —</h2>
-        <h1>Meet Our Team</h1>
-      </div>
-      <div data-aos="fade-up" className={styles.dev_list}>
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+    return (
+        <div className={styles.flex}>
+            <div data-aos="fade-up" className={styles.main}>
+                <h2>We Develop Complex Projects —</h2>
+                <h1>Meet Our Team</h1>
+            </div>
+            <div data-aos="fade-up" className={styles.dev_list}>
+                {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
           (item, index) => {
             return (
               <div
@@ -41,10 +41,10 @@ const Outstaffing = () => {
               </div>
             );
           },
-        )}
-      </div>
-    </div>
-  );
+        )} */}
+            </div>
+        </div>
+    );
 };
 
 export default Outstaffing;

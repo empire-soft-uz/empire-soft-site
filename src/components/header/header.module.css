@@ -1,131 +1,133 @@
 .header {
-  color: #000;
-  display: flex;
-  justify-content: space-between;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 .container {
-  width: 1300px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .container nav {
-  display: flex;
-  width: 30%;
-  justify-content: center;
+    display: flex;
+    width: 30%;
+    justify-content: center;
 }
 .container div {
-  display: flex;
-  width: 30%;
-  justify-content: center;
+    display: flex;
+    width: 30%;
+    justify-content: center;
 }
 .container div:nth-child(1) {
-  justify-content: start;
+    justify-content: start;
 }
 .container div:nth-child(3) {
-  justify-content: end;
+    justify-content: end;
 }
 .container nav ul {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 .container nav li a {
-  padding: 15px;
-  display: block;
+    padding: 15px;
+    display: block;
 }
 .btns {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 .btns button:nth-child(2) {
-  background-color: #1f1f1f;
-  color: #fff;
-  padding: 12px 16px;
-  border-radius: 60px;
-  border: 1px solid #1f1f1f;
-  transition: 0.15s all;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 60px;
+    border: 1px solid #1f1f1f;
+    transition: 0.15s all;
+    white-space: nowrap;
 }
 .btns button:nth-child(2):hover {
-  background-color: #fff;
-  color: #1f1f1f;
-  border: 1px solid #1f1f1f;
-  padding: 12px 16px;
-  border-radius: 60px;
-  transition: 0.15s all;
+    background-color: #fff;
+    color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    padding: 12px 16px;
+    border-radius: 60px;
+    transition: 0.15s all;
 }
 .lang {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (min-width: 576px) {
-  .container {
-    width: 540px;
-  }
-  .container nav {
-    display: none;
-  }
-  .btns {
-    width: 400px;
-    font-size: 13px;
-  }
-  .btns button:nth-child(2) {
-    width: 200px;
-    font-size: 13px;
-  }
+    .container {
+        width: 540px;
+    }
+    .container nav {
+        display: none;
+    }
+    .btns {
+        width: 400px;
+        font-size: 13px;
+    }
+    .btns button:nth-child(2) {
+        width: 200px;
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 720px;
-  }
+    .container {
+        width: 720px;
+    }
 }
 
 @media (min-width: 992px) {
-  .container {
-    width: 960px;
-  }
-  .container nav {
-    display: flex;
-  }
-  .btns {
-    width: 400px;
-    font-size: 16px;
-  }
-  .btns button:nth-child(2) {
-    font-size: 16px;
-    width: 200px;
-  }
+    .container {
+        width: 960px;
+    }
+    .container nav {
+        display: flex;
+    }
+    .btns {
+        width: 400px;
+        font-size: 16px;
+    }
+    .btns a button:nth-child(2) {
+        font-size: 16px;
+        width: 200px;
+    }
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
+    .container {
+        width: 1140px;
+    }
 }
 
 @media (min-width: 1400px) {
-  .container {
-    width: 1320px;
-  }
+    .container {
+        width: 1320px;
+    }
 }
 
 @media (max-width: 576px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-  }
-  .container nav {
-    display: none;
-  }
-  .btns {
-    width: 400px;
-    font-size: 13px;
-  }
-  .btns button:nth-child(2) {
-    width: 200px;
-    font-size: 13px;
-  }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .container nav {
+        display: none;
+    }
+    .btns {
+        width: 400px;
+        font-size: 13px;
+    }
+    .btns button:nth-child(2) {
+        width: 200px;
+        font-size: 13px;
+    }
 }
