@@ -40,15 +40,22 @@ const ContactScreen = () => {
         (value: string) => {
             if (value && isValidEmail(value)) {
                 setEmailError(null);
-                setFormState({ ...formState, phone: value });
+                setFormState({ ...formState, email: value });
             } else {
                 setEmailError("email is invalid" as never);
                 return;
             }
         },
-        [useState]
+        [formState]
     );
-    const data = `%0A Contact Us %0A Name: ${formState.name} %0A Email ${formState.email} %0A Phone ${formState.phone}`;
+
+    const handleSubmit = useCallback(() => {
+        let data = `%0A Contact Us %0A Name: ${formState.name} %0A Email ${formState.email} %0A Phone ${formState.phone}`;
+
+        console.log("Form data to submit:", data);
+
+        return data;
+    }, [formState.name, formState.email, formState.phone]);
 
     let emailData = {
         service_id: "service_8xjjilz",
@@ -63,7 +70,7 @@ const ContactScreen = () => {
         if (formState.email && formState.phone) {
             setSendLoading(true);
             await fetch(
-                `https://api.telegram.org/bot6257527521:AAGKNc12U7SmVDG-ulTTcoP1BQxDeGCoS-4/sendMessage?chat_id=-1001934192696&text=${data}`,
+                `https://api.telegram.org/bot6257527521:AAGKNc12U7SmVDG-ulTTcoP1BQxDeGCoS-4/sendMessage?chat_id=-1001934192696&text=${handleSubmit()}`,
                 {
                     method: "POST",
                     headers: {
