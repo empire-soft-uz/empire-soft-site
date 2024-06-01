@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./home.module.css";
 import React from "react";
-// import { data } from "../../../public/developers";
 
 const OutSource = () => {
     return (

@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./home.module.css";
 import Image from "next/image";
-// import { data } from "../../../public/developers";
 
 const Outstaffing = () => {
     return (
