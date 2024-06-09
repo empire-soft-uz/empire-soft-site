@@ -9,7 +9,6 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@ant-design/icons": "^5.3.7",
         "@emailjs/browser": "^4.3.3",
         "antd": "^5.17.3",
         "aos": "^2.3.4",

@@ -73,12 +73,12 @@ const OutSource = () => {
                     company specializes in delivering high-quality, efficient
                     solutions tailored to your needs. With a team of expert
                     developers and cutting-edge technology, we ensure your
-                    projects are completed on time and within budget. Whether
-                    it's a custom application, seamless integration, or
-                    innovative digital transformation, we guarantee exceptional
-                    performance and reliability. Choose us for your software
-                    development needs and experience unparalleled service and
-                    results. Let's build the future together!
+                    projects are completed on time and within budget. Whether it
+                    is a custom application, seamless integration, or innovative
+                    digital transformation, we guarantee exceptional performance
+                    and reliability. Choose us for your software development
+                    needs and experience unparalleled service and results. Let
+                    is build the future together!
                 </p>
             </div>
             {/* <div

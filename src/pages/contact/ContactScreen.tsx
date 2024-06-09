@@ -1,12 +1,10 @@
 import AlertModal from "@/components/alertModal/AlertModal";
 import PhoneInputComp from "@/components/phoneInput/PhoneInput";
 import { isValidEmail } from "@/helper/helper";
-import { message } from "antd";
 import Image from "next/image";
 import { useCallback, useMemo, useState } from "react";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import styles from "./contact.module.css";
-import { LoadingOutlined } from "@ant-design/icons";
 
 export type FormStateType = {
     name: string;
@@ -26,8 +24,6 @@ const ContactScreen = () => {
     const [emailError, setEmailError] = useState<string | null>(null);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
-    const [loading, setLoading] = useState(false);
-    console.log(formState);
 
     const onChangeNumber = useCallback(
         (value: string) => {
@@ -69,7 +65,6 @@ const ContactScreen = () => {
 
     const sendBot = async () => {
         if (formState.email && formState.phone) {
-            setLoading(true);
             try {
                 await fetch(
                     `https://api.telegram.org/bot6257527521:AAGKNc12U7SmVDG-ulTTcoP1BQxDeGCoS-4/sendMessage?chat_id=-1001934192696&text=${handleSubmit}`,
@@ -92,8 +87,6 @@ const ContactScreen = () => {
                 setFormState({ email: "", name: "", phone: "", notes: "" });
             } catch (err) {
                 setError(true);
-            } finally {
-                setLoading(false);
             }
         } else {
             alert("Email or phone number is invalid");
@@ -210,10 +203,7 @@ const ContactScreen = () => {
                         />
                     </div>
                     <div className={styles.send}>
-                        <button onClick={sendBot}>
-                            Send a request
-                            {loading ? <LoadingOutlined /> : null}
-                        </button>
+                        <button onClick={sendBot}>Send a request</button>
                     </div>
                 </div>
             </div>

@@ -208,7 +208,7 @@ const ReviewsScreen = () => {
                             <p>
                                 Our website as well Many thanks for successfully
                                 completing the Crm program We are very satisfied
-                                with the quality of work. It's fun to work with
+                                with the quality of work. It is fun to work with
                                 masters of their work! We wish the company
                                 success and luck in its future endeavors!
                             </p>
