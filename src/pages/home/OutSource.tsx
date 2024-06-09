@@ -69,11 +69,16 @@ const OutSource = () => {
                 className={styles.footerText}
             >
                 <p>
-                    In general, of course, the constant information and
-                    propaganda support of our activities does not give us any
-                    choice but to determine the withdrawal of current assets.
-                    While just part of the overall picture, findings from online
-                    analytics can be made public.
+                    Looking for fast and reliable software development? Our
+                    company specializes in delivering high-quality, efficient
+                    solutions tailored to your needs. With a team of expert
+                    developers and cutting-edge technology, we ensure your
+                    projects are completed on time and within budget. Whether
+                    it's a custom application, seamless integration, or
+                    innovative digital transformation, we guarantee exceptional
+                    performance and reliability. Choose us for your software
+                    development needs and experience unparalleled service and
+                    results. Let's build the future together!
                 </p>
             </div>
             {/* <div

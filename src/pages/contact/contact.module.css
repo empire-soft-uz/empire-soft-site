@@ -113,13 +113,17 @@
     width: 95%;
 }
 .formGroup1 {
-    width: 90%;
+    width: 100%;
+}
+.formGroup2 {
+    width: 100%;
 }
 .formControl {
     width: 100%;
 }
 .formGroup,
-.formGroup1 {
+.formGroup1,
+.formGroup2 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -141,6 +145,19 @@
     border: none;
     background-color: #000;
     color: gray;
+}
+
+.formGroup2 textarea {
+    padding: 12px 16px 12px 16px;
+    gap: 10px;
+    border-radius: 12px;
+    /* opacity: 0px; */
+    border: none;
+    background-color: #000;
+    color: gray;
+    height: 120px;
+    resize: none;
+    outline: none;
 }
 
 .Phon {
@@ -189,6 +206,9 @@
     font-weight: 600;
     line-height: 24px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .inputBox {
     position: relative;

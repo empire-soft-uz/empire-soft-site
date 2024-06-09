@@ -38,7 +38,7 @@ const ReviewsScreen = () => {
                             </div>
                             <div>
                                 <Image
-                                    src="/assets/Uztelecom.svg"
+                                    src="/assets/lukoil.svg"
                                     alt="logo"
                                     width={150}
                                     height={50}
@@ -48,7 +48,7 @@ const ReviewsScreen = () => {
                         <div className={styles.centerItem}>
                             <div>
                                 <Image
-                                    src="/assets/Uztelecom.svg"
+                                    src="/assets/uzdigitial.svg"
                                     alt="logo"
                                     width={150}
                                     height={50}
@@ -56,7 +56,7 @@ const ReviewsScreen = () => {
                             </div>
                             <div>
                                 <Image
-                                    src="/assets/Uztelecom.svg"
+                                    src="/assets/kazt.svg"
                                     alt="logo"
                                     width={150}
                                     height={50}
@@ -64,7 +64,7 @@ const ReviewsScreen = () => {
                             </div>
                             <div>
                                 <Image
-                                    src="/assets/Uztelecom.svg"
+                                    src="/assets/usel.svg"
                                     alt="logo"
                                     width={150}
                                     height={50}
@@ -74,7 +74,7 @@ const ReviewsScreen = () => {
                         <div className={styles.bottomItem}>
                             <div>
                                 <Image
-                                    src="/assets/Uztelecom.svg"
+                                    src="/assets/aloqabank.svg"
                                     alt="logo"
                                     width={150}
                                     height={50}
@@ -82,7 +82,7 @@ const ReviewsScreen = () => {
                             </div>
                             <div>
                                 <Image
-                                    src="/assets/Uztelecom.svg"
+                                    src="/assets/studio.svg"
                                     alt="logo"
                                     width={150}
                                     height={50}
@@ -141,6 +141,93 @@ const ReviewsScreen = () => {
                                         height={100}
                                     />
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.content_item}>
+                        <div className={styles.content_white}>
+                            <span>
+                                <Image
+                                    src="/assets/Star 2.svg"
+                                    alt="logo"
+                                    width={20}
+                                    height={20}
+                                />
+                            </span>
+                            <p>
+                                Deep for successful and productive cooperation
+                                thank you. The technical services we used
+                                successful service was provided on time. Company
+                                We wish you luck in your future endeavors
+                            </p>
+                            <div className={styles.profile}>
+                                <div className={styles.first}>
+                                    <span>R</span>
+                                    <div>
+                                        <h1>Roee Bendor</h1>
+                                        <p>Wedo solutions</p>
+                                    </div>
+                                </div>
+                                {/* <div>
+                                    <Image
+                                        src="/assets/Group.svg"
+                                        alt="logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div> */}
+                            </div>
+                        </div>
+                        <span>
+                            <Image
+                                src="/assets/Frame 28.svg"
+                                alt="logo"
+                                width={80}
+                                height={80}
+                            />
+                        </span>
+                    </div>
+                    <div className={styles.content_item}>
+                        <span>
+                            <Image
+                                src="/assets/Frame 28.svg"
+                                alt="logo"
+                                width={80}
+                                height={80}
+                            />
+                        </span>
+                        <div className={styles.content_white}>
+                            <span>
+                                <Image
+                                    src="/assets/Star 2.svg"
+                                    alt="logo"
+                                    width={20}
+                                    height={20}
+                                />
+                            </span>
+                            <p>
+                                Our website as well Many thanks for successfully
+                                completing the Crm program We are very satisfied
+                                with the quality of work. It's fun to work with
+                                masters of their work! We wish the company
+                                success and luck in its future endeavors!
+                            </p>
+                            <div className={styles.profile}>
+                                <div className={styles.first}>
+                                    <span>J</span>
+                                    <div>
+                                        <h1>Jurgen Firsching</h1>
+                                        <p>Chat XO</p>
+                                    </div>
+                                </div>
+                                {/* <div>
+                                    <Image
+                                        src="/assets/Group.svg"
+                                        alt="logo"
+                                        width={100}
+                                        height={100}
+                                    />
+                                </div> */}
                             </div>
                         </div>
                     </div>

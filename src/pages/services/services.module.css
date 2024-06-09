@@ -179,7 +179,7 @@
 }
 
 .container__items .container__item:nth-child(2) {
-    background-image: url("/assets/imgs/image\ 17.svg");
+    background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -415,11 +415,13 @@
         padding: 1.5rem;
         border-radius: 25px;
     }
-
     .container__items .container__item:nth-child(2) {
-        background-image: url("/assets/imgs/image\ 17.svg");
+        background: #292a2f;
+        background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
+        width: 49.5%;
+        background-position: bottom;
+        background-repeat: no-repeat;
     }
-
     .container__items .container__item:nth-child(1) {
         background: #292a2f;
         background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
@@ -544,17 +546,18 @@
     }
 
     .container__items .container__item:nth-child(2) {
-        background-size: contain;
+        background: #292a2f;
+        width: 49.5% !important;
         background-position: bottom;
         background-repeat: no-repeat;
+        background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
         background-color: linear-gradient(
             90deg,
-            #2b2e34 0%,
-            #2d303b 49.46%,
-            #09090b 100%
-        ) !important;
-        background-image: url("/assets/imgs/image\ 17.svg");
-        border: 1px solid rgba(255, 255, 255, 0.2);
+            #0f1217 0%,
+            #06070a 43.5%,
+            #111113 43.85%,
+            #292a2f 100%
+        );
     }
 
     .container__items .container__item:nth-child(1) {

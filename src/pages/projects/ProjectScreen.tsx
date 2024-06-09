@@ -8,6 +8,11 @@ const ProjectScreen = () => {
     const [mockData, setMockData] = useState(projects);
     const [index, setIndex] = useState(0);
 
+    const onChangePr = (i: number) => {
+        console.log("ishladi", index);
+        setIndex(i);
+    };
+
     useEffect(() => {
         const timer = setInterval(() => {
             setIndex((prev) => (prev + 1) % mockData.length);
@@ -43,6 +48,8 @@ const ProjectScreen = () => {
                 className={styles.mock}
             >
                 <Image
+                    data-aos="fade-up"
+                    data-aos-delay="300"
                     alt="logo"
                     src={
                         projects[index].screenshot
@@ -149,6 +156,7 @@ const ProjectScreen = () => {
                                 data-aos="fade-up"
                                 data-aos-delay={150 * _index}
                                 key={_index}
+                                onClick={() => onChangePr(_index)}
                             >
                                 {index == _index && (
                                     <span
@@ -176,7 +184,7 @@ const ProjectScreen = () => {
                                     width={90}
                                     height={30}
                                     style={{
-                                        opacity: index == _index ? 1 : 0.4,
+                                        opacity: 1,
                                     }}
                                 />
                             </div>

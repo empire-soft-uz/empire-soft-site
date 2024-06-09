@@ -1,3 +1,4 @@
+import AlertModal from "@/components/alertModal/AlertModal";
 import PhoneInputComp from "@/components/phoneInput/PhoneInput";
 import { isValidEmail } from "@/helper/helper";
 import { message } from "antd";
@@ -5,11 +6,13 @@ import Image from "next/image";
 import { useCallback, useMemo, useState } from "react";
 import { isValidPhoneNumber } from "react-phone-number-input";
 import styles from "./contact.module.css";
+import { LoadingOutlined } from "@ant-design/icons";
 
 export type FormStateType = {
     name: string;
     email: string;
     phone: string;
+    notes: string;
 };
 
 const ContactScreen = () => {
@@ -17,9 +20,14 @@ const ContactScreen = () => {
         email: "",
         name: "",
         phone: "",
+        notes: "",
     });
     const [numberError, setNumberError] = useState<string | null>(null);
     const [emailError, setEmailError] = useState<string | null>(null);
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(false);
+    console.log(formState);
 
     const onChangeNumber = useCallback(
         (value: string) => {
@@ -46,9 +54,9 @@ const ContactScreen = () => {
     );
 
     const handleSubmit = useMemo(() => {
-        const data = `%0A Contact Us %0A Name: ${formState.name} %0A Email: ${formState.email} %0A Phone: ${formState.phone}`;
+        const data = `%0A Contact Us %0A Name: ${formState.name} %0A Email: ${formState.email} %0A Phone: ${formState.phone} %0A Notes: ${formState.notes}`;
         return data;
-    }, [formState.name, formState.email, formState.phone]);
+    }, [formState.name, formState.email, formState.phone, formState.notes]);
 
     const emailData = {
         service_id: "service_8xjjilz",
@@ -61,6 +69,7 @@ const ContactScreen = () => {
 
     const sendBot = async () => {
         if (formState.email && formState.phone) {
+            setLoading(true);
             try {
                 await fetch(
                     `https://api.telegram.org/bot6257527521:AAGKNc12U7SmVDG-ulTTcoP1BQxDeGCoS-4/sendMessage?chat_id=-1001934192696&text=${handleSubmit}`,
@@ -79,11 +88,12 @@ const ContactScreen = () => {
                     },
                     body: JSON.stringify(emailData),
                 });
-                alert(
-                    "Thank you for contacting us. We will reach out to you soon!"
-                );
+                setSuccess(true);
+                setFormState({ email: "", name: "", phone: "", notes: "" });
             } catch (err) {
-                alert("Something went wrong");
+                setError(true);
+            } finally {
+                setLoading(false);
             }
         } else {
             alert("Email or phone number is invalid");
@@ -110,15 +120,18 @@ const ContactScreen = () => {
                     <h1>Give Us a Request</h1>
                     <p>or contact us now</p>
                     <div className={styles.phonNumber}>
-                        <a href="#">
+                        <a href="tel:+998994480500">
                             <h3>+998 99 448 05 00</h3>
                         </a>
-                        <a href="#">
+                        <a
+                            target={"_blank"}
+                            href="mailto:empire.soft.net@gmail.com"
+                        >
                             <p>empire.soft.net@gmail.com</p>
                         </a>
                     </div>
                     <div className={styles.iconTarmoq}>
-                        <a href="#">
+                        <a target={"_blank"} href="https://T.me/+998994480500">
                             <Image
                                 src="/assets/img/Telegram.svg"
                                 alt=""
@@ -126,7 +139,7 @@ const ContactScreen = () => {
                                 height={100}
                             />
                         </a>
-                        <a href="#">
+                        <a target={"_blank"} href="https://wa.me/+998994480500">
                             <Image
                                 src="/assets/img/whatsapp (1) 1.svg"
                                 alt=""
@@ -182,11 +195,42 @@ const ContactScreen = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.formGroup2}>
+                        <p className={styles.first}>Notes</p>
+                        <textarea
+                            placeholder="notes"
+                            className={styles.formControl}
+                            id="usr"
+                            onChange={(e) =>
+                                setFormState({
+                                    ...formState,
+                                    notes: e.target.value,
+                                })
+                            }
+                        />
+                    </div>
                     <div className={styles.send}>
-                        <button onClick={sendBot}>Send a request</button>
+                        <button onClick={sendBot}>
+                            Send a request
+                            {loading ? <LoadingOutlined /> : null}
+                        </button>
                     </div>
                 </div>
             </div>
+            {success ? (
+                <AlertModal
+                    title="Sent successfully"
+                    message="Thank you for contacting us. We will reach out to you soon!"
+                    onOk={() => setSuccess(false)}
+                />
+            ) : null}
+            {error ? (
+                <AlertModal
+                    title="Sent error"
+                    message="Something went wrong or network error"
+                    onOk={() => setError(false)}
+                />
+            ) : null}
         </div>
     );
 };
