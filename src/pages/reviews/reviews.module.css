@@ -77,15 +77,15 @@
     padding-right: 47px;
 }
 .bottom div div img {
-    opacity: 0.4;
+    opacity: 1;
 }
 .topItem div {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #4343432a;
-    background-color: #141414d4;
-    height: 60px;
+    background-color: #141414;
+    height: 100px;
     width: 200px;
 }
 
@@ -93,9 +93,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 100px;
     border: 1px solid #4343432a;
-    background-color: #141414d4;
+    background-color: #141414;
     width: 200px;
 }
 .bottomItem div {
@@ -204,6 +204,12 @@
     }
     .bottom {
         margin-top: 50px;
+    }
+    .topItem {
+        justify-content: center;
+    }
+    .centerItem {
+        justify-content: center;
     }
 }
 

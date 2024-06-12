@@ -118,9 +118,9 @@ const ContactScreen = () => {
                         </a>
                         <a
                             target={"_blank"}
-                            href="mailto:empire.soft.net@gmail.com"
+                            href="mailto:admin@empire-soft.net"
                         >
-                            <p>empire.soft.net@gmail.com</p>
+                            <p>admin@empire-soft.net</p>
                         </a>
                     </div>
                     <div className={styles.iconTarmoq}>
