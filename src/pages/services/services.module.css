@@ -113,16 +113,21 @@
 
 .center__item:nth-child(2) {
     width: 24%;
-    background: #1f1f1f;
+    background-image: url("/assets/imgs/cube1.webp");
     height: 400px !important;
     display: flex;
     flex-direction: column;
-    padding: 35px;
+    padding: 25px;
     justify-content: space-between;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: #f3f6fa;
 }
 
 .center__item:nth-child(2) h3 {
-    color: white;
+    color: #000;
 }
 
 .center__item:nth-child(2) p {
@@ -179,11 +184,13 @@
 }
 
 .container__items .container__item:nth-child(2) {
-    background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
+    background-image: url("/assets/imgs/cube6.webp");
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
+    background-size: 120% 110%;
+    /* background-position: right; */
 }
 
 .container__items .center__item div {
@@ -376,7 +383,6 @@
 
     .center__item:nth-child(2) {
         width: 24%;
-        background: #1f1f1f;
         height: 350px;
     }
 
@@ -416,10 +422,9 @@
         border-radius: 25px;
     }
     .container__items .container__item:nth-child(2) {
-        background: #292a2f;
-        background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
+        background-image: url("/assets/imgs/cube6.webp");
         width: 49.5%;
-        background-position: bottom;
+        /* background-position: right; */
         background-repeat: no-repeat;
     }
     .container__items .container__item:nth-child(1) {
@@ -509,7 +514,6 @@
 
     .center__item:nth-child(2) {
         width: 24%;
-        background: #1f1f1f;
         height: 350px;
     }
 
@@ -546,11 +550,10 @@
     }
 
     .container__items .container__item:nth-child(2) {
-        background: #292a2f;
         width: 49.5% !important;
-        background-position: bottom;
+        /* background-position: right; */
         background-repeat: no-repeat;
-        background-image: url("/assets/imgs/Mask\ group\ \(1\).svg");
+        background-image: url("/assets/imgs/cube6.webp");
         background-color: linear-gradient(
             90deg,
             #0f1217 0%,
@@ -627,5 +630,9 @@
 
     .container__items div:first-child {
         margin-bottom: 1rem;
+    }
+    .container__items .container__item:nth-child(2) {
+        background-size: 150% 105%;
+        /* background-position: right; */
     }
 }
